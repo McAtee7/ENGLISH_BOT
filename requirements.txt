@@ -1,0 +1,5 @@
+aiogram==3.*
+litellm
+python-dotenv
+requests
+beautifulsoup4
