@@ -5,3 +5,6 @@ __pycache__/
 *.py[cod]
 .DS_Store
 *.log
+ZHZ.py
+system_prompt.py
+.gitignore
