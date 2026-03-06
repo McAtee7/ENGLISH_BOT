@@ -3,3 +3,7 @@ litellm
 python-dotenv
 requests
 beautifulsoup4
+aiosqlite
+os
+logging
+import asyncio
