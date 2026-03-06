@@ -2,7 +2,7 @@ import aiosqlite
 from typing import Optional, List, Dict
 from datetime import datetime, timedelta
 
-DB_NAME = "bot.db"
+DB_NAME = "*.db"
 
 # ==================== ИНИЦИАЛИЗАЦИЯ ====================
 async def init_db() -> None:
@@ -165,7 +165,7 @@ async def get_ban_message(user_id: int) -> str | None:
     return f"""🚫 Ты в бане
 Осталось: {time_str}
 Разбан в {end_time}
-Если хочешь обжаловать — пиши @Walbek4"""
+Если хочешь обжаловать — пиши @*"""
 
 async def reset_warnings(user_id: int) -> None:
     async with aiosqlite.connect(DB_NAME) as db:
