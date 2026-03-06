@@ -17,7 +17,7 @@ continue_kb = InlineKeyboardMarkup(inline_keyboard=[
 
 support_kb = InlineKeyboardMarkup(inline_keyboard=[
     [InlineKeyboardButton(text="В меню", callback_data="menu")],
-    [InlineKeyboardButton(text="Написать разработчику", url="https://t.me/Walbek4")],
+    [InlineKeyboardButton(text="Написать разработчику", url="")],
     [InlineKeyboardButton(text="Правила и политика", callback_data="rules")]
 ])
 
