@@ -1,9 +1,0 @@
-.env
-bot.db
-__pycache__/
-*.pyc
-*.py[cod]
-.DS_Store
-*.log
-ZHZ.py
-system_prompt.py
