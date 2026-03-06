@@ -12,12 +12,11 @@ from moderation import handle_moderation
 from SOBESEDNIK import get_companion_response
 from Neuro import get_dictionary_response
 from news import get_football_news
-from ZHZ import B, P
 
 load_dotenv()
-GROQ_KEY = os.getenv(P)  # используется в других файлах через litellm
+GROQ_KEY = os.getenv("")  # используется в других файлах через litellm
 
-bot = Bot(token=B)
+bot = Bot(token="")
 dp = Dispatcher()
 
 @dp.message(CommandStart())
@@ -37,7 +36,7 @@ async def cmd_start(message: Message):
 
 @dp.message(F.text == "Поддержка")
 async def support_handler(message: Message):
-    await message.answer("Контакты разработчика:\n@Walbek4\nНапиши мне в ЛС — отвечу максимально быстро.", reply_markup=support_kb)
+    await message.answer("Контакты разработчика:\n@*\nНапиши мне в ЛС — отвечу максимально быстро.", reply_markup=support_kb)
 
 @dp.message(F.text == "Собеседник")
 async def companion_start(message: Message):
