@@ -7,4 +7,3 @@ __pycache__/
 *.log
 ZHZ.py
 system_prompt.py
-.gitignore
