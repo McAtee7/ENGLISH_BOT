@@ -10,17 +10,18 @@ main_menu = ReplyKeyboardMarkup(
     resize_keyboard=True
 )
 
-# После ответа в Словаре/Новостях
-continue_kb = InlineKeyboardMarkup(
-    inline_keyboard=[
-        [InlineKeyboardButton(text="Продолжить поиск", callback_data="continue")],
-        [InlineKeyboardButton(text="В меню", callback_data="menu")]
-    ]
-)
+continue_kb = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="Продолжить поиск", callback_data="continue")],
+    [InlineKeyboardButton(text="В меню", callback_data="menu")]
+])
 
-# Поддержка
-support_kb = InlineKeyboardMarkup(
-    inline_keyboard=[
-        [InlineKeyboardButton(text="В меню", callback_data="menu")]
-    ]
-)
+support_kb = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="В меню", callback_data="menu")],
+    [InlineKeyboardButton(text="Написать разработчику", url="https://t.me/Walbek4")],
+    [InlineKeyboardButton(text="Правила и политика", callback_data="rules")]
+])
+
+companion_role_kb = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="Сокомандник (teen style)", callback_data="role_teammate")],
+    [InlineKeyboardButton(text="Тренер (motivator style)", callback_data="role_coach")]
+])
