@@ -6,4 +6,4 @@ beautifulsoup4
 aiosqlite
 os
 logging
-import asyncio
+asyncio
