@@ -9,8 +9,8 @@ from dotenv import load_dotenv
 from DB import init_db, get_user_state, set_user_mode, set_user_role, reset_all_modes, save_user_info
 from keyboards import main_menu, continue_kb, support_kb, companion_role_kb
 from moderation import handle_moderation
-from SOBESEDNIK import get_companion_response
-from Neuro import get_dictionary_response
+from companion import get_companion_response
+from dictionary import get_dictionary_response
 from news import get_football_news
 
 load_dotenv()
